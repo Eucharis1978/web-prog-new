@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 2</title>
+    <style>
+           
+        .topurl, .floor {
+            background-color:darkblue;
+            padding: 15px;
+            box-shadow: 5px 5px 5px rgb(191, 206, 245);
+            border-radius: 0px;
+            margin: 0;                                    
+        }
+        .topurl, .floor {
+            color: white; padding-right: 20px;
+        }
+        .topurl a {
+            color: white; padding-right: 20px;
+        }
+        h2 {
+            color: rgb(48, 115, 239);
+        }
+        h3 {
+            color: rgb(48, 115, 239);
+        }
+        div {
+            background-color:white;
+            padding: 15px;
+            margin: 25px;
+            box-shadow: 2px 2px 2px rgb(191, 189, 189);
+            border-radius: 5px;
+            border: 1px solid rgb(196, 192, 192);
+        }
+        .table1, th, tr, td {
+            border: 1px solid rgb(174, 172, 172); border-collapse: collapse; text-align:left; padding: 5px;
+        }
+        .table1 {
+            width: 100%;
+            height: 200px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body style="background-color:rgb(220, 240, 248);" >
+    <div class="topurl">
+        <a href="index.html">О проекте</a>
+        <a href="index.html">Направления</a>
+        <a href="index.html">Галерея</a>
+        <a href="index.html">Планирование</a>
+        <a href="index.html">Контакты</a>
+    </div>
+    
+    <div class="text1">
+    <h2>О проекте</h2>
+   <p> Добро пожаловать на сайт "Путешествия по России!" Здесь вы найдете информацию о самых интересных местах нашей страны.<br><br>
+    Россия - самая большая страна в мире, и на ее территории расположено множество уникальных и культурных достопримечательностей.
+    </p>
+</div>
+
+    <div>
+        <h2>Популярные направления</h2>
+        <h3>Топ-5 направлений для путешествий по России:</h3>
+    <ol style="padding-left: 20px;">
+    <li>Озеро Байкал</li>
+    <li>Камчатка</li>
+    <li>Золотое кольцо России</li>
+    <li>Алтай</li>
+    <li>Калининградская область</li>
+    </ol>
+    <h3>Сравнение направлений</h3>
+    <table class="table1">    
+       <tr style="background-color: rgb(218, 216, 216);">
+            <th>Направление</th>
+            <th>Лучшее время для посещения</th>
+            <th>Средняя стоимость поездки</th>
+        <tr>
+            <td>Озеро Байкал</td>
+            <td>Июль-август</td>
+            <td>30 тыс. рублей</td>
+         </tr>
+          <tr>
+            <td>Камчатка</td>
+            <td>Июль-сентябрь</td>
+            <td>70 тыс. рублей</td>
+         </tr>
+          <tr>
+            <td>Золотое кольцо</td>
+            <td>Май-сентябрь</td>
+            <td>20 тыс. рублей</td>
+         </tr>
+          <tr>
+            <td>Алтай</td>
+            <td>Июнь-август</td>
+            <td>25 тыс. рублей</td>
+         </tr>
+    
+    </table>
+    </div>
+    <div>
+        <h2>Галерея</h2>
+        <h3>Озеро Байкал</h3>
+        <img src="1.jpg" alt="Озеро Байкал" width="400px"><br>
+        <p>Озеро Байкал - самое глубокое озеров мире.</p>
+        <h2>Камчатка</h2>
+        <img src="2.jpg" alt="Камчатка" width="400px"><br>
+        <p>Камчатка - край вулканов и гейзеров.</p>
+        <h2>Алтай</h2>
+        <img src="2.jpg" alt="Камчатка" width="400px"><br>
+        <p>Алтай - горный край с уникальной природой.</p>
+        <p>Больше фотографий вы сможете найти на наших ресурсах:</p>
+        <ul style="padding-left: 20px;">
+    <li><a href="index.html">Фото Байкала</a></li>
+    <li><a href="index.html">Фото Камчатки</a></li>
+    <li><a href="index.html">Фото Алтая</a></li>
+    </ul>
+    </div>
+    <div>
+        <h2>Планирование путешествия</h2>
+      <form action="/submit" method="POST">
+    <label for="name"><b>Ваше имя:</b></label><br>
+    <input type="text" id="name" name="name" required style="width: 100%; height: 30px; box-shadow: none; border: 1px solid rgb(216, 213, 213);"> <br><br>   
+    <label for="email"><b>Email:</b></label><br>
+    <input type="email" id="email" name="email" required style="width: 100%; height: 30px; box-shadow: none; border: 1px solid rgb(216, 213, 213);">  <br><br>  
+    <b>Выберите направление:</b>
+    <select id="country" name="country" style="width: 100%; height: 30px; border-color:rgb(216, 213, 213);">
+    <option value="">--Выберите направление--</option>
+    <option value="ru">Озеро Байкал</option>
+    <option value="us">Камчатка</option>
+    <option value="gb">Золотое кольцо России</option>
+    <option value="gb">Алтай</option>
+    <option value="gb">Калининградская область</option>
+</select><br><br>
+
+<table style="width: 100%; margin: -5px;">
+    <tr>
+        <td colspan="2" style="border: none"><b>Тип путешествия:</b></td>
+    </tr>
+        <tr>
+        <td style="border: none; width: 50%;"><label for="option1"><b>Индивидуальное</b></label></td>
+        <td style="border: none;"><input type="radio" id="option1" name="my_group" value="1"></td>
+        </tr>
+        <tr>
+        <td style="border: none;"><label for="option2"><b>Групповое</b></label></td>
+        <td style="border: none;"><input type="radio" id="option2" name="my_group" value="2"></td>
+    </tr>
+</table><br>
+
+<table style="width: 100%; margin: -5px;">
+        <tr>
+        <td colspan="3" style="border: none;"><b>Допольнительные услуги:</b></td>
+    </tr>
+    <tr>
+        <td style="width: 50%; border: none;"><label for="chex1"><b>Гид</b></label></td>
+        <td style="border: none;"><input type="checkbox" id="chex1" name="subscribe"></td>
+        </tr>
+        <tr>
+        <td style="border: none;"><label for="chex2"><b>Трансфер</b></label></td>
+        <td style="border: none;"><input type="checkbox" id="chex2" name="subscribe"></td>
+    </tr>
+      <tr>
+        <td style="border: none;"><label for="chex3"><b>Страховка</b></label></td>
+        <td style="border: none;"><input type="checkbox" id="chex3" name="subscribe"></td>
+    </tr>
+</table><br>
+
+<label for="message"><b>Комментарии и пожелания:</b></label>
+<textarea id="message" name="message" rows="4" cols="50" style="width: 100%; border-color:rgb(174, 172, 172);"></textarea>
+<br><br>
+<button type="submit" style="width: 150px;height: 35px; background-color:darkblue; color: white; border-radius: 5px; margin-right: 15px;">Отправить заявку</button>
+<button type="reset" style="width: 150px;height: 35px; background-color:darkblue; color: white; border-radius: 5px;">Очистить форму</button>
+
+</div>
+</form>
+      <div>
+<h2>Контакты</h2>
+<p>Свяжитесь с нами для получения дополнительной информации:</p>
+<ul style="padding-left: 15px;">
+    <li style="margin: 5px;">Телефон: <a href="tel:+71234567890">+7 (123) 456-78-90</a></li>
+    <li style="margin: 5px;">Email: <a href="mailto:example@email.com">example@email.com</a></li>
+    <li style="margin: 5px;">Адрес: Тайга, ул. Добролюбова, д.6</li>
+</ul>
+      </div>
+
+    <div class="floor">
+        <p style="text-align: center;">&copy; 2025 Путешествия по России. Все права защищены.</p>
+    </div>
+</body>
+</html>
