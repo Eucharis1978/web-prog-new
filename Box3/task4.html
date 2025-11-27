@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 4 (task4.html)</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="standart.css">
+    <!--Подключение Bootstrap подробная информация, примеры, шаблоны и прочее https://bootstrap-4.ru/-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-lg bg-body-tertiary m-0 p-0"> <!--bg-body-tertiary m-0 p-0 убирает отсутпы-->
+  <div class="container-fluid">    
+    <!-- Кнопка для мобильных -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      ☰
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Главная</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Услуги</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Информация</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<h1>Популярные рецепты</h1>
+<div class="gallery">
+  <div class="card">
+    <img src="1.jpg" alt="Первая фото">
+    <div class="cardtext"> <p><h3>Первое блюдо</h3>   Еда — это не только источник энергии, но и важная часть культуры и социальных связей. 
+      Она обеспечивает организм питательными веществами для роста и поддержания здоровья.</p>
+    </div>
+  </div>
+    <div class="card">
+    <img src="2.jpg" alt="Первая фото">
+    <div class="cardtext"> <p><h3>Второе блюдо</h3>   Еда — это не только источник энергии, но и важная часть культуры и социальных связей. 
+      Она обеспечивает организм питательными веществами для роста и поддержания здоровья.</p>
+    </div>
+  </div>
+   <div class="card">
+    <img src="3.jpg" alt="Первая фото">
+    <div class="cardtext"> <p><h3>Третье блюдо</h3>   Еда — это не только источник энергии, но и важная часть культуры и социальных связей. 
+      Она обеспечивает организм питательными веществами для роста и поддержания здоровья.</p>
+    </div>
+  </div> 
+  
+  <div class="flex-block"  style="max-width: 1140px;">
+    <div class="text">
+      <div class="cardtext"> <p><h3>О философии питания</h3> Философия питания — это комплексный подход к пище, который выходит за рамки
+         простого насыщения и включает в себя заботу о физическом и ментальном здоровье. 
+         Он может основываться на принципах сбалансированности, гармонии и осознанности, 
+         включая выбор свежих, минимально обработанных продуктов, а также на осмыслении пищи как источника не только энергии, но и удовольствия. </p>
+    </div>
+    </div>
+    <div class="image-wrapper">
+      <img src="4.jpg" alt="Адаптивное изображение">
+    </div>
+   </div>
+
+ <div class="container">
+    <div class="block">
+      <div style="width: 30px; height: 30px;" > <img src="1.png" alt=""></div>
+      <h3>Свежие продукты</h3>
+      <p>Для большинства людей «только свежие продукты» означает употребление в пищу
+         свежих фруктов и овощей, цельнозерновых продуктов, мяса, птицы и рыбы, а также других скоропортящихся и необработанных продуктов. </p>
+    </div>
+
+    <div class="block">
+      <div style="width: 30px; height: 30px;" > <img src="2.png" alt=""></div>
+      <h3>Быстрое приготовление</h3>
+      <p>Быстрые рецепты на каждый день. Подборка простых и быстрых рецептов на каждый день с пошаговыми фото и инструкциями. Наши кулинары рассказывают и показывают.</p>
+    </div>
+
+    <div class="block">
+      <div style="width: 30px; height: 30px;" > <img src="3.png" alt=""></div>
+      <h3>Полезно для здоровья</h3>
+      <p>Полезно для здоровья — сочетание правильного питания с разнообразными продуктами (овощи, фрукты, белки, злаки, полезные жиры), 
+        а также физической активности, достаточного сна, управления стрессом и отказа от вредных привычек. </p>
+    </div>
+  </div>  
+</div>
+
+
+
+
+
+<div class="footer"><p><h4>Мы создаём качественные продукты и сервисы с 2010 года.</h4>
+Email: info@example.com <br>
+Телефон: +7 (999) 123-45-67<br>
+Город: Москва<br>
+</p></div>
+
+<!-- JS для работы скиптов - всегда внизу body -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
