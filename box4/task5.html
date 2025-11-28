@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Адаптивное бургерное меню</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="standart.css">
+  <style>
+
+
+    body {      
+      padding-top: 60px; /* Чтобы контент не прятался под меню */
+      background-color: #F5F5F5;
+    }
+
+    /* Обёртка меню */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0; /*или указать ширину 100%, но может выйти за правый край*/
+      height: 50px;
+      background: #4A6FA4;
+      padding: 15px 20px; /*15px — отступы сверху и снизу, - 20px — отступы слева и справа. от основного контейнера*/
+      display: flex;
+      justify-content: space-between; /*первый элемент прижимался к левому краю, - последний — к правому краю,*/
+      align-items: center; /*Выравнивает все дочерние элементы по вертикали по центру внутри контейнера*/
+      z-index: 1000;
+    }
+
+    /* Логотип или название */
+    .logo {
+      color: white;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    /* Бургер-кнопка — по умолчанию скрыта */
+    .burger {
+      display: none;
+      flex-direction: column; /*расположение менб в колонку*/
+      cursor: pointer; /*изменение курсора при наведении*/
+    }
+
+    .burger span {
+      width: 25px;
+      height: 3px;
+      background: white;
+      margin: 3px 0; /*3px — отступы сверху и снизу,  - 0 — отступы слева и справа (то есть, нет горизонтальных отступов).*/
+    }
+
+    /* Основное меню */
+    .nav-menu {
+      display: flex;
+      gap: 20px; /*расстояние (зазор) между всеми прямыми дочерними элементами   внутри flex- или grid-контейнера.*/
+    }
+
+    .nav-menu a {
+      color: white;
+      text-decoration: none;
+      font-size: 25px;
+    }
+
+    /* === Адаптация для мобильных === */
+    @media (max-width: 767px) {
+      /* Скрываем обычное меню для мобильных устрйоств*/
+      .nav-menu {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #444;
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+        display: none; /* Скрыто по умолчанию */
+      }
+
+      /* Показываем бургер */
+      .burger {
+        display: flex;
+      }
+
+      /* Когда меню открыто */
+      .nav-menu.active {
+        display: flex;
+      }
+    }
+    .box {
+  display: flex; /*тип*/
+  justify-content: center;/*выравнивание*/
+  }
+.inbox {
+  background-color: white;
+  padding: 10px;/*отступы внутри */
+  margin: 5px; /*отступы снаружи*/
+  border-radius: 5px;
+  position: relative;
+  top:50px;
+
+}
+
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Мой Сайт</div>
+
+    <!-- Бургер-кнопка -->
+    <div class="burger" id="burger">
+      <span></span> <!--полоски бургерного меню-->
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Меню -->
+    <div class="nav-menu" id="menu">
+      <a href="#home">Главная</a>
+      <a href="#about">О нас</a>
+      <a href="#services">Услуги</a>
+      <a href="#contact">Контакты</a>
+    </div>
+  </nav>
+
+  <main style="padding: 20px;">
+
+<div class="box">
+  <div class="inbox"><h1 style="color: #4A6FA4;">Добро пожаловать!</h1>
+  <p>Это пример адаптивного меню. Уменьшите окно браузера до ширины меньше 768px — появится бургер!</p>
+  </div>
+</div>
+<div>
+  </main>
+
+  <script>
+    const burger = document.getElementById('burger'); //получаем доступ к классу бургер
+    const menu = document.getElementById('menu'); //получаем доступ к классу меню
+
+    burger.addEventListener('click', () => {  // или так function() { menu.classList.toggle('active');
+      menu.classList.toggle('active'); // переключатель класса active
+    });
+  </script>
+
+</body>
+</html>
