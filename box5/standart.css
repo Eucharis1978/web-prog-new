@@ -1,0 +1,168 @@
+/* Заголовки */
+h1 {
+  font-size: 2em;      /* Обычно 32px */
+  font-weight: bold;
+  margin: 0.67em 0;
+}
+
+h2 {
+  font-size: 1.5em;    /* Обычно 24px */
+  font-weight: bold;
+  margin: 0.83em 0;
+}
+
+h3 {
+  font-size: 1.17em;   /* Обычно 18.72px */
+  font-weight: bold;
+  margin: 1em 0;
+}
+
+h4 {
+  font-size: 1em;      /* Обычно 16px */
+  font-weight: bold;
+  margin: 1.33em 0;
+}
+
+h5 {
+  font-size: 0.83em;   /* Обычно 13.28px */
+  font-weight: bold;
+  margin: 1.67em 0;
+}
+
+h6 {
+  font-size: 0.67em;   /* Обычно 10.72px */
+  font-weight: bold;
+  margin: 2.33em 0;
+}
+
+/* Основной текст */
+p {
+  font-size: 1em;      /* Обычно 16px */
+  margin: 1em 0;
+  line-height: 1.5;
+}
+
+/* Ссылки */
+a {
+  color: #0000EE;      /* Синий цвет */
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a:visited {
+  color: #551A8B;      /* Фиолетовый для посещенных */
+}
+
+a:hover {
+  color: #FF0000;      /* Красный при наведении */
+  text-decoration: underline;
+}
+
+a:active {
+  color: #FF0000;      /* Красный при активации */
+}
+
+/* Списки */
+ul {
+    list-style-type: disc;
+    list-style-position: outside;
+    margin: 1em 0;
+    padding-left: 40px;
+} 
+ol {
+    list-style-type: decimal;
+    list-style-position: outside;
+    margin: 1em 0;
+    padding-left: 40px;
+}
+
+li {
+    display: list-item;
+    text-align: match-parent;
+}
+
+/* Акцентирование текста */
+strong, b {
+  font-weight: bold;
+}
+
+em, i {
+  font-style: italic;
+}
+
+u {
+  text-decoration: underline;
+}
+
+s, strike, del {
+  text-decoration: line-through;
+}
+
+ins {
+  text-decoration: underline;
+}
+
+/* Цитаты */
+blockquote {
+  margin: 1em 40px;
+  font-style: italic;
+}
+
+q {
+  font-style: italic;
+}
+
+/* Код */
+code, kbd, samp {
+  font-family: monospace;
+  font-size: 1em;
+}
+
+pre {
+  font-family: monospace;
+  white-space: pre;
+  margin: 1em 0;
+}
+
+/* Верхний и нижний индекс */
+sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+/* Маленький текст */
+small {
+  font-size: smaller;
+}
+
+/* Выделение */
+mark {
+  background-color: yellow;
+  color: black;
+}
+
+/* Аббревиатуры */
+abbr[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+/* Адреса */
+address {
+  font-style: italic;
+}
+
+/* Определения */
+dfn {
+  font-style: italic;
+}
+
+/* Переменные */
+var {
+  font-style: italic;
+}
