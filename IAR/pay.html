@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Пожертвование</title>
+  <style>
+    body {
+
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .donation-form {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    .donation-form h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #333;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+      color: #444;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .checkbox-group {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    .checkbox-group input[type="checkbox"] {
+      margin-top: 4px;
+      flex-shrink: 0;
+    }
+
+    .checkbox-group label {
+      margin-bottom: 0;
+      font-weight: normal;
+      color: #555;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 14px;
+      background-color: #28a745; /* зелёный — ассоциируется с пожертвованиями */
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .submit-btn:hover {
+      background-color: #218838;
+    }
+    .con1{
+      display: flex;
+      max-width: 1200px;
+      gap: 300px;
+    }
+/* Адаптация для мобильных устройств */
+@media (max-width: 1000px) {
+  .con1 {
+    flex-wrap: wrap;
+    justify-content: center;
+        /* Центрируем текст (по желанию) */
+      }
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-image: url('12234.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.logo {
+  color: #2e7d32;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 700;
+}
+
+ </style>
+
+</head>
+
+<body>
+
+  <div class="con1">
+
+  <div class="logo">
+      <p> ПОЖЕРТВОВАНИЕ <br>
+НА УСТАВНУЮ ДЕЯТЕЛЬНОСТЬ   
+</p>
+<img src="logo.png">
+    </div>
+
+  <form class="donation-form" action="https://example.com/process-payment" method="POST">
+    <h2>Пожертвование</h2>
+
+    <div class="form-group">
+      <label for="firstName">Имя</label>
+      <input type="text" id="firstName" name="firstName" required>
+    </div>
+
+    <div class="form-group">
+      <label for="lastName">Фамилия</label>
+      <input type="text" id="lastName" name="lastName" required>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Телефон</label>
+      <input type="tel" id="phone" name="phone" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Электронная почта</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+      <div class="checkbox-group">
+        <input type="checkbox" id="consent" name="consent" required>
+        <label for="consent">Я даю согласие на обработку персональных данных</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="checkbox-group">
+        <input type="checkbox" id="newsletter" name="newsletter">
+        <label for="newsletter">Подписаться на новости и отчёты о деятельности</label>
+      </div>
+    </div>
+
+    <button type="submit" class="submit-btn">
+      Оплатить картой
+    </button>
+  </form>
+
+
+</div>
+
+
+</body>
+</html>
